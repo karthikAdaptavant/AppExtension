@@ -844,8 +844,8 @@ public extension UIView {
         self.layer.borderWidth = width
     }
     
-    public func addShadow(radius: CGFloat = 4) {
-        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+    public func addShadow(radius: CGFloat = 4, color: UIColor? = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25)) {
+        self.layer.shadowColor = color?.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = radius
