@@ -1,0 +1,16 @@
+PODS:
+  - AppExtension (1.0)
+
+DEPENDENCIES:
+  - AppExtension (from `../`)
+
+EXTERNAL SOURCES:
+  AppExtension:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AppExtension: 2c070c7a04fcc6b07228e6a307dcab6d14940fab
+
+PODFILE CHECKSUM: 5cf0c5d99a216f2cb9c8314993bcdad4f3a5d867
+
+COCOAPODS: 1.4.0
