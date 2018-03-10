@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppExtension'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.swift_version    = '4.0'
   s.summary          = 'A Candy for extension in swift'
 

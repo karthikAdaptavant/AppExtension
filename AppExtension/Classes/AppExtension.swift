@@ -845,7 +845,7 @@ public extension UIView {
     }
     
     public func addShadow(radius: CGFloat = 4) {
-        self.layer.shadowColor =  UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = radius
@@ -1025,3 +1025,21 @@ public extension UIColor {
     }
 }
 
+public extension UIButton {
+    
+    public func setFont(font: UIFont) {
+        self.titleLabel?.font = font
+    }
+    
+    public func setFontColor(color: UIColor) {
+        self.setTitleColor(color, for: .normal)
+        self.setTitleColor(color, for: .selected)
+        self.setTitleColor(color, for: .highlighted)
+    }
+    
+    public func setTitle(title: String) {
+        self.setTitle(title, for: .normal)
+        self.setTitle(title, for: .highlighted)
+        self.setTitle(title, for: .selected)
+    }
+}
